@@ -5,6 +5,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    title: "PROJETO 90 DIAS | Transformação Corporal Completa",
+    meta: [
+      { name: "description", content: "Método completo com ebook, treino e dieta personalizada para acelerar sua evolução em 90 dias por apenas R$27." },
+      { property: "og:title", content: "PROJETO 90 DIAS" },
+      { property: "og:description", content: "A transformação que você precisa por um preço que você pode pagar." },
+      { name: "twitter:title", content: "PROJETO 90 DIAS" },
+      { name: "twitter:description", content: "Transforme seu corpo em 90 dias." },
+    ],
+  }),
   component: Index,
 });
 
