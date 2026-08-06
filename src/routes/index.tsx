@@ -133,10 +133,16 @@ function Index() {
       <section className="container mx-auto px-6 py-20 max-w-3xl">
         <h2 className="text-4xl font-bold text-center mb-16">Perguntas Frequentes</h2>
         <Accordion type="single" collapsible>
-          {["O acesso é imediato?", "Serve para homens e mulheres?", "Posso acessar pelo celular?", "Preciso pagar mensalidade?", "Sou iniciante, serve para mim?"].map((q, i) => (
+          {[
+            { q: "O acesso é imediato?", a: "Sim, logo após a confirmação do pagamento você receberá os dados de acesso em seu e-mail imediatamente." },
+            { q: "Serve para homens e mulheres?", a: "Sim, o método e os geradores inteligentes foram desenvolvidos para se adaptar a ambos os sexos e diferentes objetivos." },
+            { q: "Posso acessar pelo celular?", a: "Com certeza! Todo o material é otimizado para celulares, tablets e computadores, permitindo que você leve seu treino e dieta para qualquer lugar." },
+            { q: "Preciso pagar mensalidade?", a: "Não. O pagamento é único e você terá acesso vitalício a todo o conteúdo e atualizações do Projeto 90 Dias." },
+            { q: "Sou iniciante, serve para mim?", a: "Sim, o material foi construído de forma simples e didática para que qualquer pessoa, mesmo começando do zero, consiga aplicar e ter resultados." }
+          ].map((item, i) => (
             <AccordionItem key={i} value={`item-${i}`}>
-              <AccordionTrigger>{q}</AccordionTrigger>
-              <AccordionContent>Sim, o acesso é imediato logo após a confirmação do pagamento.</AccordionContent>
+              <AccordionTrigger>{item.q}</AccordionTrigger>
+              <AccordionContent>{item.a}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
