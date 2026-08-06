@@ -149,7 +149,7 @@ function Index() {
           Você pode continuar tentando descobrir sozinho qual treino seguir e qual dieta fazer...
           Ou pode começar hoje utilizando um método organizado, simples e criado para ajudar você a dar os primeiros passos com mais clareza.
         </p>
-        <Button onClick={handlePurchase} className="bg-[#22C55E] hover:bg-[#16a34a] text-black font-bold text-xl px-12 py-8 h-auto transition-transform hover:scale-105 active:scale-95">
+        <Button onClick={scrollToPricing} className="bg-[#22C55E] hover:bg-[#16a34a] text-black font-bold text-xl px-12 py-8 h-auto transition-transform hover:scale-105 active:scale-95">
           🚀 QUERO COMEÇAR AGORA
         </Button>
       </section>
