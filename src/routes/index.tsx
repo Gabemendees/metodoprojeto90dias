@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     title: "PROJETO 90 DIAS | Transformação Corporal Completa",
     meta: [
-      { name: "description", content: "Método completo com ebook, treino e dieta personalizada para acelerar sua evolução em 90 dias por apenas R$27." },
+      { name: "description", content: "Método completo com ebook, treino e dieta personalizada para acelerar sua evolução em 90 dias por apenas R$27,90." },
       { property: "og:title", content: "PROJETO 90 DIAS" },
       { property: "og:description", content: "A transformação que você precisa por um preço que você pode pagar." },
       { name: "twitter:title", content: "PROJETO 90 DIAS" },
@@ -19,6 +19,11 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const handlePurchase = () => {
+    // Redireciona para o checkout (Exemplo: Hotmart, Stripe, etc)
+    window.location.href = "https://pay.hotmart.com/V97753443E?off=v7on64at&checkoutMode=10";
+  };
+
   return (
     <div className="min-h-screen bg-[#0D0D0D] text-white">
       {/* Hero Section */}
@@ -37,14 +42,12 @@ function Index() {
               </span>
             ))}
           </div>
-          <Button className="bg-[#22C55E] hover:bg-[#16a34a] text-black font-bold text-lg px-8 py-6 h-auto w-full lg:w-auto">
+          <Button 
+            onClick={handlePurchase}
+            className="bg-[#22C55E] hover:bg-[#16a34a] text-black font-bold text-lg px-8 py-6 h-auto w-full lg:w-auto transition-transform hover:scale-105 active:scale-95"
+          >
             🚀 QUERO COMEÇAR AGORA
           </Button>
-        </div>
-        <div className="flex-1 w-full relative">
-          <div className="aspect-square bg-gray-900 rounded-2xl border border-gray-800 flex items-center justify-center p-8">
-            <span className="text-gray-600 font-medium">Premium Mockup Placeholder</span>
-          </div>
         </div>
       </section>
 
@@ -114,8 +117,8 @@ function Index() {
             <div className="flex justify-between border-b border-gray-800 pb-4"><span>Gerador de Treino</span><span className="line-through text-gray-500">R$37</span></div>
             <div className="flex justify-between font-bold text-xl"><span>Valor total</span><span>R$121</span></div>
           </div>
-          <div className="text-2xl font-bold text-[#22C55E] mb-6">Hoje: R$27</div>
-          <Button className="bg-[#22C55E] w-full text-black font-bold text-xl py-8">🚀 QUERO GARANTIR MEU ACESSO</Button>
+          <div className="text-2xl font-bold text-[#22C55E] mb-6">Hoje: R$27,90</div>
+          <Button onClick={handlePurchase} className="bg-[#22C55E] hover:bg-[#16a34a] w-full text-black font-bold text-xl py-8 transition-transform hover:scale-105 active:scale-95">🚀 QUERO GARANTIR MEU ACESSO</Button>
         </div>
       </section>
 
@@ -139,7 +142,7 @@ function Index() {
           Você pode continuar tentando descobrir sozinho qual treino seguir e qual dieta fazer...
           Ou pode começar hoje utilizando um método organizado, simples e criado para ajudar você a dar os primeiros passos com mais clareza.
         </p>
-        <Button className="bg-[#22C55E] hover:bg-[#16a34a] text-black font-bold text-xl px-12 py-8 h-auto">
+        <Button onClick={handlePurchase} className="bg-[#22C55E] hover:bg-[#16a34a] text-black font-bold text-xl px-12 py-8 h-auto transition-transform hover:scale-105 active:scale-95">
           🚀 QUERO COMEÇAR AGORA
         </Button>
       </section>
