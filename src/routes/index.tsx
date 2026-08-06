@@ -20,8 +20,15 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const handlePurchase = () => {
-    // Redireciona para o checkout (Exemplo: Hotmart, Stripe, etc)
-    window.location.href = "https://pay.hotmart.com/V97753443E?off=v7on64at&checkoutMode=10";
+    // Redireciona para o checkout
+    window.location.href = "https://pay.cakto.com.br/32th8jw_1025747";
+  };
+
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById("pricing");
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -43,7 +50,7 @@ function Index() {
             ))}
           </div>
           <Button 
-            onClick={handlePurchase}
+            onClick={scrollToPricing}
             className="bg-[#22C55E] hover:bg-[#16a34a] text-black font-bold text-lg px-8 py-6 h-auto w-full lg:w-auto transition-transform hover:scale-105 active:scale-95"
           >
             🚀 QUERO COMEÇAR AGORA
@@ -108,7 +115,7 @@ function Index() {
       </section>
 
       {/* Pricing */}
-      <section className="container mx-auto px-6 py-20 text-center">
+      <section id="pricing" className="container mx-auto px-6 py-20 text-center">
         <h2 className="text-4xl font-bold mb-16">QUANTO ISSO CUSTARIA?</h2>
         <div className="max-w-xl mx-auto bg-[#1a1a1a] p-8 rounded-2xl border border-gray-800">
           <div className="space-y-4 mb-8">
@@ -142,7 +149,7 @@ function Index() {
           Você pode continuar tentando descobrir sozinho qual treino seguir e qual dieta fazer...
           Ou pode começar hoje utilizando um método organizado, simples e criado para ajudar você a dar os primeiros passos com mais clareza.
         </p>
-        <Button onClick={handlePurchase} className="bg-[#22C55E] hover:bg-[#16a34a] text-black font-bold text-xl px-12 py-8 h-auto transition-transform hover:scale-105 active:scale-95">
+        <Button onClick={scrollToPricing} className="bg-[#22C55E] hover:bg-[#16a34a] text-black font-bold text-xl px-12 py-8 h-auto transition-transform hover:scale-105 active:scale-95">
           🚀 QUERO COMEÇAR AGORA
         </Button>
       </section>
