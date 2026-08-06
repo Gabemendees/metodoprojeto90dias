@@ -115,7 +115,7 @@ function Index() {
       </section>
 
       {/* Pricing */}
-      <section className="container mx-auto px-6 py-20 text-center">
+      <section id="pricing" className="container mx-auto px-6 py-20 text-center">
         <h2 className="text-4xl font-bold mb-16">QUANTO ISSO CUSTARIA?</h2>
         <div className="max-w-xl mx-auto bg-[#1a1a1a] p-8 rounded-2xl border border-gray-800">
           <div className="space-y-4 mb-8">
