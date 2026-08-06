@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Check, Dumbbell, Utensils, Zap, Clock, ArrowRight, BookOpen, Target, Scale } from "lucide-react";
+import { BookOpen, Utensils, Dumbbell } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export const Route = createFileRoute("/")({
@@ -33,7 +32,6 @@ function Index() {
           </Button>
         </div>
         <div className="flex-1 w-full relative">
-          {/* Mockup Placeholder */}
           <div className="aspect-square bg-gray-900 rounded-2xl border border-gray-800 flex items-center justify-center p-8">
             <span className="text-gray-600 font-medium">Premium Mockup Placeholder</span>
           </div>
@@ -63,7 +61,68 @@ function Index() {
         <p className="text-center text-xl font-bold mt-12 text-gray-400">Então o Projeto 90 Dias foi criado para você.</p>
       </section>
 
-      {/* CTA Footer */}
+      {/* What You Get */}
+      <section className="container mx-auto px-6 py-20">
+        <h2 className="text-4xl font-bold text-center mb-16">O QUE VOCÊ VAI RECEBER</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            { title: "Ebook Projeto 90 Dias", icon: <BookOpen className="w-10 h-10 text-[#22C55E]" />, content: ["Como emagrecer", "Como ganhar massa", "Como montar refeições", "Como montar uma rotina", "Como acompanhar resultados"] },
+            { title: "Gerador Inteligente de Dieta", icon: <Utensils className="w-10 h-10 text-[#22C55E]" />, content: ["Cálculo automático de macros", "Cardápio personalizado", "Lista de substituições"] },
+            { title: "Gerador Inteligente de Treino", icon: <Dumbbell className="w-10 h-10 text-[#22C55E]" />, content: ["Treino personalizado", "Séries e repetições", "Descanso e cardio"] }
+          ].map((card, i) => (
+            <Card key={i} className="bg-[#1a1a1a] border-gray-800 p-8 space-y-4">
+              {card.icon}
+              <h3 className="text-2xl font-bold">{card.title}</h3>
+              <ul className="space-y-2 text-gray-400">
+                {card.content.map((item, j) => <li key={j} className="flex items-center gap-2">✔ {item}</li>)}
+              </ul>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="container mx-auto px-6 py-20 bg-[#0d0d0d]">
+        <h2 className="text-4xl font-bold text-center mb-16">COMO FUNCIONA</h2>
+        <div className="grid md:grid-cols-5 gap-4 max-w-4xl mx-auto">
+          {["Adquira o acesso", "Receba o ebook", "Monte sua dieta", "Monte seu treino", "Comece sua evolução"].map((step, i) => (
+            <div key={i} className="text-center space-y-4">
+              <div className="w-12 h-12 bg-[#22C55E] text-black rounded-full flex items-center justify-center font-bold text-xl mx-auto">{i + 1}</div>
+              <p className="font-bold">{step}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section className="container mx-auto px-6 py-20 text-center">
+        <h2 className="text-4xl font-bold mb-16">QUANTO ISSO CUSTARIA?</h2>
+        <div className="max-w-xl mx-auto bg-[#1a1a1a] p-8 rounded-2xl border border-gray-800">
+          <div className="space-y-4 mb-8">
+            <div className="flex justify-between border-b border-gray-800 pb-4"><span>Ebook</span><span className="line-through text-gray-500">R$47</span></div>
+            <div className="flex justify-between border-b border-gray-800 pb-4"><span>Gerador de Dieta</span><span className="line-through text-gray-500">R$37</span></div>
+            <div className="flex justify-between border-b border-gray-800 pb-4"><span>Gerador de Treino</span><span className="line-through text-gray-500">R$37</span></div>
+            <div className="flex justify-between font-bold text-xl"><span>Valor total</span><span>R$121</span></div>
+          </div>
+          <div className="text-2xl font-bold text-[#22C55E] mb-6">Hoje: R$27</div>
+          <Button className="bg-[#22C55E] w-full text-black font-bold text-xl py-8">🚀 QUERO GARANTIR MEU ACESSO</Button>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="container mx-auto px-6 py-20 max-w-3xl">
+        <h2 className="text-4xl font-bold text-center mb-16">Perguntas Frequentes</h2>
+        <Accordion type="single" collapsible>
+          {["O acesso é imediato?", "Serve para homens e mulheres?", "Posso acessar pelo celular?", "Preciso pagar mensalidade?", "Sou iniciante, serve para mim?"].map((q, i) => (
+            <AccordionItem key={i} value={`item-${i}`}>
+              <AccordionTrigger>{q}</AccordionTrigger>
+              <AccordionContent>Sim, o acesso é imediato logo após a confirmação do pagamento.</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </section>
+
+      {/* Final CTA */}
       <section className="container mx-auto px-6 py-20 text-center">
         <h2 className="text-4xl font-bold mb-8">A SUA TRANSFORMAÇÃO COMEÇA AGORA.</h2>
         <p className="max-w-2xl mx-auto text-lg text-gray-400 mb-12">
