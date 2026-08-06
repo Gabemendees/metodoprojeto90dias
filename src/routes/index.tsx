@@ -50,7 +50,7 @@ function Index() {
             ))}
           </div>
           <Button 
-            onClick={handlePurchase}
+            onClick={scrollToPricing}
             className="bg-[#22C55E] hover:bg-[#16a34a] text-black font-bold text-lg px-8 py-6 h-auto w-full lg:w-auto transition-transform hover:scale-105 active:scale-95"
           >
             🚀 QUERO COMEÇAR AGORA
