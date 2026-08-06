@@ -20,8 +20,15 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const handlePurchase = () => {
-    // Redireciona para o checkout (Exemplo: Hotmart, Stripe, etc)
-    window.location.href = "https://pay.hotmart.com/V97753443E?off=v7on64at&checkoutMode=10";
+    // Redireciona para o checkout
+    window.location.href = "https://pay.cakto.com.br/32th8jw_1025747";
+  };
+
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById("pricing");
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
