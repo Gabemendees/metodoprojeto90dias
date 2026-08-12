@@ -119,12 +119,13 @@ function Index() {
         <h2 className="text-4xl font-bold mb-16">QUANTO ISSO CUSTARIA?</h2>
         <div className="max-w-xl mx-auto bg-[#1a1a1a] p-8 rounded-2xl border border-gray-800">
           <div className="space-y-4 mb-8">
-            <div className="flex justify-between border-b border-gray-800 pb-4"><span>Ebook</span><span className="line-through text-gray-500">R$47</span></div>
-            <div className="flex justify-between border-b border-gray-800 pb-4"><span>Gerador de Dieta</span><span className="line-through text-gray-500">R$37</span></div>
-            <div className="flex justify-between border-b border-gray-800 pb-4"><span>Gerador de Treino</span><span className="line-through text-gray-500">R$37</span></div>
-            <div className="flex justify-between font-bold text-xl"><span>Valor total</span><span>R$121</span></div>
+            <div className="flex justify-between border-b border-gray-800 pb-4"><span>Ebook</span><span className="line-through text-gray-500">R$46,90</span></div>
+            <div className="flex justify-between border-b border-gray-800 pb-4"><span>Gerador de Dieta</span><span className="line-through text-gray-500">R$37,10</span></div>
+            <div className="flex justify-between border-b border-gray-800 pb-4"><span>Gerador de Treino</span><span className="line-through text-gray-500">R$37,10</span></div>
+            <div className="flex justify-between font-bold text-xl"><span>Valor total</span><span>R$121,10</span></div>
           </div>
-          <div className="text-2xl font-bold text-[#22C55E] mb-6">Hoje: R$27,90</div>
+          <div className="text-3xl font-bold text-[#22C55E] mb-2">Hoje: R$27,90</div>
+          <div className="text-gray-400 font-medium mb-6">ou 6x de R$5,35</div>
           <Button onClick={handlePurchase} className="bg-[#22C55E] hover:bg-[#16a34a] w-full text-black font-bold text-xl py-8 transition-transform hover:scale-105 active:scale-95">🚀 QUERO GARANTIR MEU ACESSO</Button>
         </div>
       </section>
