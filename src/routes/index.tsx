@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   const handlePurchase = () => {
     // Redireciona para o checkout
-    window.location.href = "https://pay.cakto.com.br/32th8jw_1025747";
+    window.location.href = "https://pay.sunize.com.br/ytcEyjZz";
   };
 
   const scrollToPricing = () => {
