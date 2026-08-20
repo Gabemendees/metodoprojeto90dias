@@ -127,7 +127,7 @@ function Index() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
       <div className="bg-yellow-400 p-2 text-center text-xs font-bold text-black">
-        'remova isso tambem' (on element 'body' at '/src/routes/index.tsx:1')
+        'nao e para adicionar informaçao nenhuma ai, quero que remova isso' (on element 'body' at '/src/routes/index.tsx:1')
       </div>
       {/* Hero */}
       <section className="relative overflow-hidden">
