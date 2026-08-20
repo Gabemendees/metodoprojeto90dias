@@ -32,7 +32,10 @@ function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0D0D0D] text-white">
+    <div className="min-h-screen bg-[#0D0D0D] text-white relative">
+      <div className="absolute top-0 left-0 w-full p-2 bg-yellow-500 text-black text-center text-xs font-bold z-50">
+        'faça oque pedi' (on element 'body' at '/src/routes/index.tsx:1')
+      </div>
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 lg:py-32 flex flex-col lg:flex-row items-center gap-12">
         <div className="flex-1 space-y-8">
