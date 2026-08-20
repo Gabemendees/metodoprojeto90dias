@@ -142,3 +142,8 @@
     color: var(--color-foreground);
   }
 }
+
+/* Ocultar o selo "Edit with Lovable" */
+#lovable-badge {
+  display: none !important;
+}
