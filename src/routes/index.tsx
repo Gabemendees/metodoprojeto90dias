@@ -20,8 +20,8 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const handlePurchase = () => {
-    // Redireciona para o checkout
-    window.location.href = "https://pay.sunize.com.br/ytcEyjZz#0935971d-10d4-4d70-b34e-079efc550af9";
+    // Redirecionamento real do navegador para evitar bloqueio por iframe/embed
+    window.location.assign("https://pay.sunize.com.br/ytcEyjZz#0935971d-10d4-4d70-b34e-079efc550af9");
   };
 
   const scrollToPricing = () => {
