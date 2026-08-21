@@ -127,59 +127,7 @@ function Index() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
       <div className="bg-yellow-400 p-2 text-black text-[10px] text-center font-mono leading-tight whitespace-pre-wrap">
-        'NÃO faça nenhuma alteração de design ou conteúdo ainda.
-
-Existe um problema no ambiente de preview: toda vez que envio uma nova mensagem pelo chat, o texto completo dessa mensagem aparece em um BANNER AMARELO no topo da página.
-
-O banner termina com algo semelhante a:
-
-(on element \'body\' at \'/src/routes/index.tsx:1\')
-
-Isso indica que o problema pode estar relacionado ao sistema de edição/preview, a um overlay de erro/debug ou a alguma integração que está interceptando as instruções do chat.
-
-QUERO QUE VOCÊ PRIMEIRO IDENTIFIQUE A ORIGEM EXATA DESSE BANNER.
-
-Verifique:
-
-se ele é gerado pelo código da aplicação;
-
-se existe algum componente de erro/debug;
-
-se existe algum overlay de edição;
-
-se existe algum código que captura a última instrução enviada;
-
-se existe alguma integração com o sistema de edição visual;
-
-se existe algum código adicionando conteúdo ao elemento body;
-
-se existe alguma configuração de desenvolvimento causando isso;
-
-se esse banner está sendo injetado pelo próprio ambiente de preview em vez do código da aplicação.
-
-IMPORTANTE:
-
-Se esse banner NÃO estiver sendo criado pelo código da aplicação e for um recurso interno do ambiente da Lovable, NÃO tente criar uma solução falsa dentro do site.
-
-Nesse caso, informe claramente que ele é um overlay do ambiente de preview/editor.
-
-Se ele estiver sendo criado pelo código da aplicação, remova completamente a origem dele, e não apenas esconda com CSS.
-
-O resultado esperado é:
-
-enviar um prompt pelo chat;
-
-o prompt continuar aparecendo SOMENTE no chat;
-
-o conteúdo do prompt nunca ser reproduzido dentro da página;
-
-nenhum banner amarelo aparecer no topo;
-
-nenhuma mensagem de debug ou edição aparecer sobre o site.
-
-NÃO altere o design, conteúdo, checkout, componentes ou funcionalidades da página para tentar resolver isso.
-
-Primeiro identifique a origem do problema e depois corrija somente a causa.' (on element 'body' at '/src/routes/index.tsx:1')
+        'exclua definitivamente src/routes/index.tsx, nao acrescente nenhuma mensagem que eu enviar mais la' (on element 'body' at '/src/routes/index.tsx:1')
       </div>
 
       {/* Bloco 1 — Topo */}
