@@ -333,12 +333,18 @@ function Index() {
                 Pagamento único
               </p>
             </div>
+            <p className="mb-6 text-sm text-gray-400">
+              Ao finalizar a compra, você também pode adicionar as ferramentas de dieta e treino personalizados por valores especiais.
+            </p>
             <Button
               onClick={goToCheckout}
               className="h-auto w-full rounded-xl bg-[#22C55E] py-6 text-base font-black uppercase tracking-wide text-black transition-transform hover:scale-[1.02] hover:bg-[#16a34a] active:scale-95"
             >
-              Quero começar meus 90 dias
+              Quero meu Projeto 90 Dias agora
             </Button>
+            <p className="mt-4 text-[10px] text-gray-600 leading-tight">
+              Conteúdo educativo e informativo. Não substitui acompanhamento de profissionais de saúde.
+            </p>
             
             <div className="mt-10 space-y-4 text-left border-t border-white/5 pt-8">
               <h3 className="text-sm font-bold uppercase tracking-wider text-gray-500">Turbine seu resultado (Order Bumps)</h3>
