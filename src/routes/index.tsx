@@ -127,7 +127,103 @@ function Index() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
       <div className="bg-yellow-400 p-2 text-black text-[10px] text-center font-mono leading-tight whitespace-pre-wrap">
-        'nao e para substituir o texto do banner amarelo' (on element 'body' at '/src/routes/index.tsx:1')
+        'O banner amarelo continua aparecendo no SITE e está reproduzindo exatamente o último texto enviado pelo chat.
+
+NÃO quero mais tentativas de esconder o banner.
+
+Quero que você INVESTIGUE A CAUSA RAIZ.
+
+Analise o estado atual do projeto e identifique quais arquivos/componentes foram modificados recentemente para implementar edição, prompts, mensagens, overlays, banners ou qualquer mecanismo relacionado ao elemento body.
+
+Compare com o estado anterior do projeto, se houver histórico/diff disponível.
+
+Identifique exatamente qual alteração introduziu este comportamento:
+
+capturar o texto enviado pelo chat;
+
+inserir esse texto na página;
+
+criar um banner amarelo;
+
+adicionar conteúdo ao body;
+
+exibir "(on element \'body\' at \'/src/routes/index.tsx:1\')".
+
+REVERTA SOMENTE as alterações responsáveis por esse comportamento.
+
+Não reverta a landing page inteira e não apague alterações legítimas do Projeto 90 Dias.
+
+Depois faça uma busca global no projeto por qualquer código restante relacionado a esse comportamento.
+
+Procure inclusive por componentes e variáveis com nomes diferentes de "banner", como:
+
+debug
+
+overlay
+
+instruction
+
+command
+
+prompt
+
+message
+
+selectedElement
+
+targetElement
+
+body
+
+editor
+
+preview
+
+mutation
+
+DOM
+
+notification
+
+warning
+
+Também verifique scripts, providers, layouts, hooks e componentes globais.
+
+IMPORTANTE:
+
+Não tente resolver usando CSS.
+
+Não use display:none.
+
+Não use visibility:hidden.
+
+Não coloque outro elemento sobre o banner.
+
+Não altere a página para simplesmente esconder o problema.
+
+A CORREÇÃO DEVE REMOVER A ORIGEM DO BANNER.
+
+Depois da correção:
+
+recarregue a aplicação;
+
+navegue pelas páginas;
+
+envie uma nova mensagem;
+
+recarregue novamente;
+
+confirme que o texto da mensagem NÃO aparece dentro do site.
+
+O resultado final deve ser:
+
+A mensagem enviada pelo chat permanece somente no chat.
+
+O site não deve reproduzir nenhuma mensagem do chat.
+
+O banner amarelo não deve existir.
+
+Não faça nenhuma outra alteração na landing page.' (on element 'body' at '/src/routes/index.tsx:1')
       </div>
 
       {/* Bloco 1 — Topo */}
