@@ -218,43 +218,55 @@ function Index() {
       {/* Bloco 5 — Grade de cards (Depoimentos) */}
       <section className="container mx-auto px-6 py-24">
         <h2 className="mb-12 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
-          O que dizem nossos alunos
+          Depoimentos
         </h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
           <Card className="border-white/5 bg-[#121212] p-6 flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gray-800" />
               <div>
-                <p className="font-bold text-sm">Aluno Exemplo</p>
-                <p className="text-xs text-gray-500">Transformação em 90 dias</p>
+                <p className="font-bold text-sm">Ricardo S.</p>
+                <p className="text-xs text-gray-500">Resultados em 4 semanas</p>
               </div>
             </div>
-            <p className="italic text-gray-400 text-sm">
-              "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
+            <p className="italic text-gray-400 text-sm leading-relaxed">
+              "Finalmente consegui organizar minha rotina. O planner mudou meu jogo."
             </p>
           </Card>
           <Card className="border-white/5 bg-[#121212] p-6 flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gray-800" />
               <div>
-                <p className="font-bold text-sm">Aluna Exemplo</p>
-                <p className="text-xs text-gray-500">Foco em consistência</p>
+                <p className="font-bold text-sm">Ana Paula</p>
+                <p className="text-xs text-gray-500">Foco total</p>
               </div>
             </div>
-            <p className="italic text-gray-400 text-sm">
-              "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
+            <p className="italic text-gray-400 text-sm leading-relaxed">
+              "As orientações para eventos sociais me salvaram de desistir no primeiro final de semana."
             </p>
           </Card>
           <Card className="border-white/5 bg-[#121212] p-6 flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gray-800" />
               <div>
-                <p className="font-bold text-sm">Aluno Exemplo</p>
-                <p className="text-xs text-gray-500">Resultados reais</p>
+                <p className="font-bold text-sm">Bruno M.</p>
+                <p className="text-xs text-gray-500">Consistência</p>
               </div>
             </div>
-            <p className="italic text-gray-400 text-sm">
-              "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
+            <p className="italic text-gray-400 text-sm leading-relaxed">
+              "O guia de treino é muito direto ao ponto. Sem enrolação e focado no que importa."
+            </p>
+          </Card>
+          <Card className="border-white/5 bg-[#121212] p-6 flex flex-col gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-gray-800" />
+              <div>
+                <p className="font-bold text-sm">Juliana V.</p>
+                <p className="text-xs text-gray-500">Novo hábito</p>
+              </div>
+            </div>
+            <p className="italic text-gray-400 text-sm leading-relaxed">
+              "Não é apenas mais um ebook, é um plano de ação real que você consegue seguir."
             </p>
           </Card>
         </div>
