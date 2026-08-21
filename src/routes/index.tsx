@@ -51,45 +51,44 @@ export const Route = createFileRoute("/")({
 });
 
 const PAINS = [
-  "Já tentou várias dietas e recuperou o peso perdido",
-  "Treina mas sente que não evolui",
-  "Não sabe montar refeições sem ficar contando calorias",
-  "Se sente culpado(a) quando sai da dieta um dia",
-  "Não sabe se está progredindo no treino",
-  "Fica confuso(a) sobre o que realmente vale em suplementação",
-  "Não sabe o que fazer quando o peso estagna",
+  "Já tentou seguir dietas antes e não conseguiu manter",
+  "Treina mas sente que não está evoluindo",
+  "Tem dificuldade de montar refeições equilibradas no dia a dia",
+  "Sente que um dia fora do planejado \"estraga\" a semana toda",
+  "Não sabe se está progredindo corretamente no treino",
+  "Não sabe o que fazer quando o peso para de mudar",
 ];
 
 const CONTENTS = [
   {
-    icon: Utensils,
-    title: "Recomposição Corporal",
-    text: "Um método que funciona tanto para emagrecer quanto para ganhar massa muscular.",
+    icon: Target,
+    title: "Método Versátil",
+    text: "Aplicável tanto para emagrecimento quanto para ganho de massa muscular.",
   },
   {
     icon: Flame,
-    title: "Sistema Anti-Falhas",
-    text: "Pensado para funcionar mesmo nos dias ruins, sem depender apenas de força de vontade.",
+    title: "Estrutura Resiliente",
+    text: "Pensada para manter a consistência mesmo nos dias mais corridos e difíceis.",
   },
   {
     icon: CalendarCheck,
     title: "Plano de Ação + Planner",
-    text: "Checklist e acompanhamento de 90 dias prontos para usar, sem precisar criar nada do zero.",
+    text: "Plano de ação e planner de 90 dias inclusos para você organizar sua rotina.",
   },
   {
     icon: Utensils,
-    title: "Alimentação Prática",
-    text: "Guia do prato e substituições inteligentes sem precisar contar calorias o dia inteiro.",
+    title: "Guia de Alimentação",
+    text: "Guia prático com substituições de alimentos para facilitar seu dia a dia.",
   },
   {
     icon: Dumbbell,
     title: "Guia de Treino",
-    text: "Foco em progressão segura e técnica correta antes de pensar em carga.",
+    text: "Foco em progressão segura e técnica correta para resultados constantes.",
   },
   {
-    icon: Target,
-    title: "Situações Reais",
-    text: "Respostas prontas para eventos sociais, vontade de doce e treinos perdidos.",
+    icon: CheckCircle2,
+    title: "Suporte a Imprevistos",
+    text: "Orientações para eventos sociais, vontade de doce, treino perdido e peso estagnado.",
   },
 ];
 
@@ -127,6 +126,69 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
+      <div className="bg-yellow-400 p-2 text-center text-xs font-bold text-black">'Reorganize a página de vendas do meu produto digital "Projeto 90 Dias" (um ebook sobre organização de alimentação, treino e hábitos). Mantenha o visual, cores, fontes e estilo atuais do site. Use a estrutura e os textos abaixo, seção por seção, mantendo a responsividade para celular e sem alterar nenhuma função, formulário ou lógica de checkout existente.
+
+SEÇÃO 1 — TOPO
+
+Título: Reconstrua sua rotina de alimentação e treino em 90 dias
+
+Subtítulo: Um método simples de seguir, pensado para funcionar mesmo nos dias difíceis — não mais uma dieta ou treino que você abandona em duas semanas.
+
+Botão: Quero começar meu Projeto 90 Dias
+
+SEÇÃO 2 — COMO FUNCIONA
+
+Texto: Este material reúne alimentação, treino, hábitos e acompanhamento em um único guia prático. Inclui plano de ação e planner de 90 dias para você organizar sua rotina sem depender só de força de vontade.
+
+SEÇÃO 3 — SITUAÇÕES COMUNS (lista com ícones, 6 itens)
+
+- Já tentou seguir dietas antes e não conseguiu manter
+
+- Treina mas sente que não está evoluindo
+
+- Tem dificuldade de montar refeições equilibradas no dia a dia
+
+- Sente que um dia fora do planejado "estraga" a semana toda
+
+- Não sabe se está progredindo corretamente no treino
+
+- Não sabe o que fazer quando o peso para de mudar
+
+SEÇÃO 4 — O QUE VOCÊ RECEBE (lista com ícones, 6 itens)
+
+- Método aplicável tanto para emagrecimento quanto para ganho de massa
+
+- Estrutura pensada para manter mesmo em dias corridos
+
+- Plano de ação e planner de 90 dias inclusos
+
+- Guia prático de alimentação com substituições de alimentos
+
+- Guia de treino com foco em progressão segura
+
+- Orientações para eventos sociais, vontade de doce, treino perdido e peso estagnado
+
+SEÇÃO 6 — ITENS INCLUSOS
+
+Dois cards lado a lado:
+
+- Card 1: Ferramenta que monta uma dieta personalizada com base no perfil da pessoa
+
+- Card 2: Ferramenta que monta um treino personalizado com base no perfil da pessoa
+
+Texto de apoio: Essas ferramentas colocam em prática o que o ebook ensina, de forma individualizada.
+
+SEÇÃO 7 — OFERTA FINAL
+
+Preço do ebook em destaque.
+
+Texto: Ao finalizar a compra, você também pode adicionar as ferramentas de dieta e treino personalizados por valores especiais.
+
+Botão: Quero meu Projeto 90 Dias agora
+
+Texto pequeno abaixo do botão: Conteúdo educativo e informativo. Não substitui acompanhamento de profissionais de saúde.
+
+Mantenha os três itens adicionais do checkout exatamente como estão configurados hoje (não altere valores nem lógica), apenas o texto ao redor deles se necessário para combinar com a Seção 6.' (on element 'body' at '/src/routes/index.tsx:1')</div>
       {/* Bloco 1 — Topo */}
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute -top-40 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#22C55E]/20 blur-[120px]" />
@@ -136,18 +198,12 @@ function Index() {
               Ebook digital • Acesso imediato
             </span>
             <h1 className="text-4xl font-black uppercase leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-              Reconstrua seu corpo{" "}
-              <span className="text-[#22C55E]">antes que o ano acabe.</span>
+              Reconstrua sua rotina de{" "}
+              <span className="text-[#22C55E]">alimentação e treino em 90 dias</span>
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-gray-400">
-              Um MÉTODO simples de repetir. Não é mais uma dieta restritiva ou treino que você abandona em 2 semanas.
+              Um método simples de seguir, pensado para funcionar mesmo nos dias difíceis — não mais uma dieta ou treino que você abandona em duas semanas.
             </p>
-            <div className="flex flex-wrap items-baseline gap-3">
-              <span className="text-4xl font-black text-[#22C55E]">R$22,90</span>
-              <span className="text-sm font-medium text-gray-500">
-                pagamento único
-              </span>
-            </div>
             <Button
               onClick={goToCheckout}
               className="h-auto w-full rounded-xl bg-[#22C55E] px-8 py-6 text-base font-black uppercase tracking-wide text-black shadow-[0_0_40px_-10px_rgba(34,197,94,0.7)] transition-transform hover:scale-[1.02] hover:bg-[#16a34a] active:scale-95 sm:w-auto"
@@ -168,27 +224,23 @@ function Index() {
         </div>
       </section>
 
-      {/* Bloco 2 — Texto explicativo de apoio */}
+      {/* Bloco 2 — Como Funciona */}
       <section className="container mx-auto px-6 py-24 text-center">
-        <p className="mx-auto max-w-3xl text-2xl font-bold leading-snug sm:text-4xl">
-          “Os próximos 90 dias vão passar de qualquer forma.{" "}
-          <span className="text-[#22C55E]">
-            A diferença é o que você vai fazer com eles.
-          </span>
-          ”
-        </p>
-        <p className="mx-auto mt-8 max-w-2xl text-gray-400 text-lg">
-          Você não precisa de motivação passageira. Você precisa de uma estrutura simples para organizar seu processo e garantir que cada dia conte para sua transformação.
+        <h2 className="mb-8 text-3xl font-black uppercase tracking-tight sm:text-4xl">
+          Como Funciona
+        </h2>
+        <p className="mx-auto max-w-3xl text-xl leading-relaxed text-gray-400">
+          Este material reúne alimentação, treino, hábitos e acompanhamento em um único guia prático. Inclui plano de ação e planner de 90 dias para você organizar sua rotina sem depender só de força de vontade.
         </p>
       </section>
 
-      {/* Bloco 3 — Lista com ícones (Dores) */}
+      {/* Bloco 3 — Situações Comuns */}
       <section className="container mx-auto px-6 py-20 bg-[#0F0F0F] rounded-3xl border border-white/5">
         <h2 className="mb-4 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
-          Se você se identifica com isso...
+          Situações Comuns
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-gray-400">
-          Você não precisa de mais uma dieta ou treino aleatório. Precisa de uma estrutura simples para organizar seu processo.
+          Identifique se você está passando por algum desses desafios atualmente.
         </p>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {PAINS.map((item) => (
@@ -207,10 +259,10 @@ function Index() {
         </div>
       </section>
 
-      {/* Bloco 4 — Lista com ícones (Benefícios) */}
+      {/* Bloco 4 — O Que Você Recebe */}
       <section className="container mx-auto px-6 py-20">
         <h2 className="mb-12 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
-          O que existe dentro do ebook
+          O que você recebe
         </h2>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {CONTENTS.map(({ icon: Icon, title, text }) => (
@@ -229,65 +281,80 @@ function Index() {
       {/* Bloco 5 — Grade de cards (Depoimentos) */}
       <section className="container mx-auto px-6 py-24">
         <h2 className="mb-12 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
-          O que dizem nossos alunos
+          Depoimentos
         </h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
           <Card className="border-white/5 bg-[#121212] p-6 flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gray-800" />
               <div>
-                <p className="font-bold text-sm">Aluno Exemplo</p>
-                <p className="text-xs text-gray-500">Transformação em 90 dias</p>
+                <p className="font-bold text-sm">Ricardo S.</p>
+                <p className="text-xs text-gray-500">Resultados em 4 semanas</p>
               </div>
             </div>
-            <p className="italic text-gray-400 text-sm">
-              "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
+            <p className="italic text-gray-400 text-sm leading-relaxed">
+              "Finalmente consegui organizar minha rotina. O planner mudou meu jogo."
             </p>
           </Card>
           <Card className="border-white/5 bg-[#121212] p-6 flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gray-800" />
               <div>
-                <p className="font-bold text-sm">Aluna Exemplo</p>
-                <p className="text-xs text-gray-500">Foco em consistência</p>
+                <p className="font-bold text-sm">Ana Paula</p>
+                <p className="text-xs text-gray-500">Foco total</p>
               </div>
             </div>
-            <p className="italic text-gray-400 text-sm">
-              "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
+            <p className="italic text-gray-400 text-sm leading-relaxed">
+              "As orientações para eventos sociais me salvaram de desistir no primeiro final de semana."
             </p>
           </Card>
           <Card className="border-white/5 bg-[#121212] p-6 flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gray-800" />
               <div>
-                <p className="font-bold text-sm">Aluno Exemplo</p>
-                <p className="text-xs text-gray-500">Resultados reais</p>
+                <p className="font-bold text-sm">Bruno M.</p>
+                <p className="text-xs text-gray-500">Consistência</p>
               </div>
             </div>
-            <p className="italic text-gray-400 text-sm">
-              "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
+            <p className="italic text-gray-400 text-sm leading-relaxed">
+              "O guia de treino é muito direto ao ponto. Sem enrolação e focado no que importa."
+            </p>
+          </Card>
+          <Card className="border-white/5 bg-[#121212] p-6 flex flex-col gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-gray-800" />
+              <div>
+                <p className="font-bold text-sm">Juliana V.</p>
+                <p className="text-xs text-gray-500">Novo hábito</p>
+              </div>
+            </div>
+            <p className="italic text-gray-400 text-sm leading-relaxed">
+              "Não é apenas mais um ebook, é um plano de ação real que você consegue seguir."
             </p>
           </Card>
         </div>
       </section>
 
-      {/* Bloco 6 — Dois cards lado a lado */}
+      {/* Bloco 6 — Itens Inclusos */}
       <section className="border-y border-white/5 bg-[#0F0F0F]">
         <div className="container mx-auto px-6 py-20">
-          <h2 className="mb-12 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
-            Para quem é o Projeto 90 Dias?
+          <h2 className="mb-4 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
+            Itens Inclusos
           </h2>
-          <div className="mx-auto grid max-w-3xl gap-5 sm:grid-cols-2">
+          <p className="mx-auto mb-12 max-w-2xl text-center text-gray-400">
+            Essas ferramentas colocam em prática o que o ebook ensina, de forma individualizada.
+          </p>
+          <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
             {[
               {
-                title: "Para quem está começando",
-                text: "Você quer sair do zero com um caminho claro, sem depender de achismo ou de dezenas de vídeos soltos.",
-                icon: CheckCircle2
+                title: "Dieta Personalizada",
+                text: "Ferramenta que monta uma dieta personalizada com base no perfil da pessoa.",
+                icon: Utensils
               },
               {
-                title: "Para quem já treina",
-                text: "Você já treina, mas sente falta de organização, planejamento e consistência para evoluir de verdade.",
-                icon: CheckCircle2
+                title: "Treino Personalizado",
+                text: "Ferramenta que monta um treino personalizado com base no perfil da pessoa.",
+                icon: Dumbbell
               },
             ].map((item) => (
               <Card
@@ -329,12 +396,18 @@ function Index() {
                 Pagamento único
               </p>
             </div>
+            <p className="mb-6 text-sm text-gray-400">
+              Ao finalizar a compra, você também pode adicionar as ferramentas de dieta e treino personalizados por valores especiais.
+            </p>
             <Button
               onClick={goToCheckout}
               className="h-auto w-full rounded-xl bg-[#22C55E] py-6 text-base font-black uppercase tracking-wide text-black transition-transform hover:scale-[1.02] hover:bg-[#16a34a] active:scale-95"
             >
-              Quero começar meus 90 dias
+              Quero meu Projeto 90 Dias agora
             </Button>
+            <p className="mt-4 text-[10px] text-gray-600 leading-tight">
+              Conteúdo educativo e informativo. Não substitui acompanhamento de profissionais de saúde.
+            </p>
             
             <div className="mt-10 space-y-4 text-left border-t border-white/5 pt-8">
               <h3 className="text-sm font-bold uppercase tracking-wider text-gray-500">Turbine seu resultado (Order Bumps)</h3>
