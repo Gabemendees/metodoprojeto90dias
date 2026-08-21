@@ -127,60 +127,7 @@ function Index() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
       <div className="bg-yellow-400 p-2 text-black text-[10px] text-center font-mono leading-tight whitespace-pre-wrap">
-        'CORRIJA APENAS ESTE BUG.
-
-O site está exibindo no topo um banner amarelo que contém exatamente o texto da última instrução enviada pelo chat, seguido de:
-
-(on element \'body\' at \'/src/routes/index.tsx:1\')
-
-Isso está acontecendo DENTRO DA APLICAÇÃO, não apenas no editor.
-
-Faça uma busca no projeto inteiro e encontre o código que está capturando minha mensagem/instrução e renderizando-a no elemento body.
-
-Procure principalmente por:
-
-document.body
-
-document.createElement
-
-appendChild
-
-innerHTML
-
-textContent
-
-prompt
-
-message
-
-on element
-
-body
-
-execute
-
-componentes de banner, alert, overlay ou debug
-
-Remova completamente a origem desse banner.
-
-NÃO esconda com CSS.
-NÃO use display:none.
-NÃO coloque outro elemento por cima.
-NÃO altere o design da landing page.
-
-Remova o código responsável por criar/injetar esse banner e qualquer código auxiliar usado exclusivamente por ele.
-
-Depois verifique se o banner continua aparecendo após:
-
-recarregar a página;
-
-enviar uma nova mensagem;
-
-navegar entre as rotas.
-
-O texto enviado pelo chat NÃO pode ser renderizado dentro do site em nenhuma circunstância.
-
-Mantenha todo o restante da página exatamente como está.' (on element 'body' at '/src/routes/index.tsx:1')
+        'Implemente uma busca no código para identificar onde a última instrução do chat está sendo capturada e injetada no elemento body, removendo completamente essa origem.' (on element 'body' at '/src/routes/index.tsx:1')
       </div>
 
       {/* Bloco 1 — Topo */}
