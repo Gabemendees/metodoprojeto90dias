@@ -51,71 +51,72 @@ export const Route = createFileRoute("/")({
 });
 
 const PAINS = [
-  "Quer emagrecer, mas não sabe por onde começar",
-  "Quer ganhar massa e se perde entre treinos aleatórios",
-  "Troca de dieta toda semana e nunca conclui nenhuma",
-  "Vai para a academia sem um plano definido",
-  "Começa animado na segunda e para na quinta",
-  "Consome muito conteúdo e aplica quase nada",
+  "Já tentou várias dietas e recuperou o peso perdido",
+  "Treina mas sente que não evolui",
+  "Não sabe montar refeições sem ficar contando calorias",
+  "Se sente culpado(a) quando sai da dieta um dia",
+  "Não sabe se está progredindo no treino",
+  "Fica confuso(a) sobre o que realmente vale em suplementação",
+  "Não sabe o que fazer quando o peso estagna",
 ];
 
 const CONTENTS = [
   {
     icon: Utensils,
-    title: "Alimentação e dieta",
-    text: "Como estruturar suas refeições, entender porções e criar uma rotina alimentar que você consiga manter.",
-  },
-  {
-    icon: Dumbbell,
-    title: "Treino",
-    text: "Como organizar sua semana de treinos, escolher exercícios e progredir com clareza.",
+    title: "Recomposição Corporal",
+    text: "Um método que funciona tanto para emagrecer quanto para ganhar massa muscular.",
   },
   {
     icon: Flame,
-    title: "Emagrecimento",
-    text: "Os princípios que realmente importam para reduzir gordura sem soluções mágicas.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Ganho de massa",
-    text: "O que considerar para construir músculo com treino, alimentação e recuperação.",
-  },
-  {
-    icon: Target,
-    title: "Definição",
-    text: "Como alinhar treino e alimentação na fase de definição sem se perder no processo.",
+    title: "Sistema Anti-Falhas",
+    text: "Pensado para funcionar mesmo nos dias ruins, sem depender apenas de força de vontade.",
   },
   {
     icon: CalendarCheck,
-    title: "Consistência e planejamento dos 90 dias",
-    text: "Um plano de 90 dias para transformar decisões diárias em hábito.",
+    title: "Plano de Ação + Planner",
+    text: "Checklist e acompanhamento de 90 dias prontos para usar, sem precisar criar nada do zero.",
+  },
+  {
+    icon: Utensils,
+    title: "Alimentação Prática",
+    text: "Guia do prato e substituições inteligentes sem precisar contar calorias o dia inteiro.",
+  },
+  {
+    icon: Dumbbell,
+    title: "Guia de Treino",
+    text: "Foco em progressão segura e técnica correta antes de pensar em carga.",
+  },
+  {
+    icon: Target,
+    title: "Situações Reais",
+    text: "Respostas prontas para eventos sociais, vontade de doce e treinos perdidos.",
   },
 ];
 
 const FAQ = [
   {
-    q: "Quanto custa e como funciona o pagamento?",
-    a: "O Ebook Projeto 90 Dias custa R$22,90 em pagamento único. Não existe mensalidade nem cobrança recorrente.",
+    q: "Posso emagrecer e ganhar músculo ao mesmo tempo?",
+    a: "Sim, o ebook foca em recomposição corporal, ensinando como ajustar a rotina para ambos os objetivos.",
   },
   {
-    q: "Como recebo o acesso?",
-    a: "Após a confirmação do pagamento, o acesso é liberado e enviado para o e-mail informado no checkout.",
+    q: "Preciso fazer cardio todos os dias?",
+    a: "Não é obrigatório. O guia explica como integrar o cardio de forma estratégica na sua rotina de 90 dias.",
   },
   {
-    q: "É um produto digital?",
-    a: "Sim. É um ebook digital, lido no celular, tablet ou computador. Nada é enviado fisicamente.",
+    q: "Quantas vezes na semana devo treinar?",
+    a: "O método é flexível. O guia ajuda você a organizar sua semana de acordo com sua disponibilidade real.",
   },
   {
-    q: "Serve para emagrecer?",
-    a: "O ebook explica os princípios de alimentação, treino e rotina aplicados ao emagrecimento, para você organizar o processo com clareza.",
+    q: "Posso comer fora ou ir a eventos sociais?",
+    a: "Com certeza. Temos uma seção específica sobre como lidar com situações sociais sem abandonar o processo.",
   },
   {
-    q: "Serve para ganho de massa e definição?",
-    a: "Sim. Há conteúdos específicos sobre ganho de massa e sobre a fase de definição, com orientações de treino e alimentação.",
+    q: "E se eu perder um treino ou sair da dieta?",
+    a: "O sistema é baseado em consistência, não perfeição. Ensinamos como retomar imediatamente sem culpa.",
   },
   {
-    q: "Os geradores de dieta e treino estão inclusos?",
-    a: "Não. Os geradores de dieta e treino são produtos complementares, vendidos separadamente no checkout. O ebook é o produto principal e funciona de forma independente.",
+    q: "E se meu peso não mudar por alguns dias?",
+    a: "O peso é apenas uma métrica. O planner ensina a acompanhar fotos, medidas e energia para ver a evolução real.",
   },
 ];
 
@@ -136,12 +137,11 @@ function Index() {
               Ebook digital • Acesso imediato
             </span>
             <h1 className="text-4xl font-black uppercase leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-              Seu Projeto 90 Dias{" "}
-              <span className="text-[#22C55E]">começa hoje.</span>
+              Reconstrua seu corpo{" "}
+              <span className="text-[#22C55E]">antes que o ano acabe.</span>
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-gray-400">
-              Um guia prático para organizar alimentação, treino e rotina e
-              começar sua transformação corporal nos próximos 90 dias.
+              Um MÉTODO simples de repetir. Não é mais uma dieta restritiva ou treino que você abandona em 2 semanas.
             </p>
             <div className="flex flex-wrap items-baseline gap-3">
               <span className="text-4xl font-black text-[#22C55E]">R$22,90</span>
@@ -153,7 +153,7 @@ function Index() {
               onClick={goToCheckout}
               className="h-auto w-full rounded-xl bg-[#22C55E] px-8 py-6 text-base font-black uppercase tracking-wide text-black shadow-[0_0_40px_-10px_rgba(34,197,94,0.7)] transition-transform hover:scale-[1.02] hover:bg-[#16a34a] active:scale-95 sm:w-auto"
             >
-              Quero garantir meu acesso
+              Quero começar meu Projeto 90 Dias
             </Button>
           </div>
           <div className="relative flex justify-center">
@@ -172,11 +172,10 @@ function Index() {
       {/* Problema */}
       <section className="container mx-auto px-6 py-20">
         <h2 className="mb-4 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
-          Se você se identifica com isso…
+          Se você se identifica com isso...
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-gray-400">
-          Querer emagrecer, ganhar massa ou definir é fácil. Difícil é organizar
-          dieta, treino e consistência ao mesmo tempo.
+          Você não precisa de mais uma dieta ou treino aleatório. Precisa de uma estrutura simples para organizar seu processo.
         </p>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {PAINS.map((item) => (
@@ -199,13 +198,13 @@ function Index() {
       <section className="border-y border-white/5 bg-[#0F0F0F]">
         <div className="container mx-auto px-6 py-20 text-center">
           <h2 className="text-3xl font-black uppercase tracking-tight sm:text-4xl">
-            O Projeto 90 Dias organiza o processo
+            Por que este método funciona?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-gray-400">
-            Um guia direto que coloca as três peças essenciais no lugar certo.
+            Não depende de motivação. Depende de um sistema (gatilhos, rotina e o "mínimo aceitável" nos dias ruins).
           </p>
           <div className="mx-auto mt-12 grid max-w-4xl gap-4 sm:grid-cols-3">
-            {["Alimentação", "Treino", "Consistência"].map((pillar, i) => (
+            {["Sistema de Rotina", "Plano de Ação", "Checklist Diário"].map((pillar, i) => (
               <div
                 key={pillar}
                 className="rounded-2xl border border-[#22C55E]/20 bg-[#22C55E]/5 p-8"
@@ -282,6 +281,14 @@ function Index() {
           </span>
           ”
         </p>
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 max-w-4xl mx-auto text-left">
+          <Card className="border-white/5 bg-[#121212] p-6 italic text-gray-400">
+            "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
+          </Card>
+          <Card className="border-white/5 bg-[#121212] p-6 italic text-gray-400">
+            "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
+          </Card>
+        </div>
       </section>
 
       {/* Oferta */}
@@ -312,12 +319,44 @@ function Index() {
               onClick={goToCheckout}
               className="h-auto w-full rounded-xl bg-[#22C55E] py-6 text-base font-black uppercase tracking-wide text-black transition-transform hover:scale-[1.02] hover:bg-[#16a34a] active:scale-95"
             >
-              Quero garantir meu acesso
+              Quero começar meus 90 dias
             </Button>
-            <p className="mt-4 text-xs text-gray-500">
-              Produto digital. Acesso enviado por e-mail após a confirmação do
-              pagamento.
-            </p>
+            
+            <div className="mt-10 space-y-4 text-left border-t border-white/5 pt-8">
+              <h3 className="text-sm font-bold uppercase tracking-wider text-gray-500">Turbine seu resultado (Order Bumps)</h3>
+              
+              <div className="flex items-center justify-between p-3 rounded-lg bg-white/5 border border-white/10">
+                <div>
+                  <p className="text-sm font-bold">Gerador de Dieta Personalizada</p>
+                  <p className="text-xs text-gray-500">Ferramenta que aplica a teoria na prática.</p>
+                </div>
+                <span className="text-[#22C55E] font-bold">R$9,90</span>
+              </div>
+
+              <div className="flex items-center justify-between p-3 rounded-lg bg-white/5 border border-white/10">
+                <div>
+                  <p className="text-sm font-bold">Gerador de Treino Personalizado</p>
+                  <p className="text-xs text-gray-500">Monte seu treino com base no seu perfil.</p>
+                </div>
+                <span className="text-[#22C55E] font-bold">R$9,90</span>
+              </div>
+
+              <div className="flex items-center justify-between p-3 rounded-lg bg-[#22C55E]/10 border border-[#22C55E]/30">
+                <div>
+                  <p className="text-sm font-bold text-[#22C55E]">Combo: Dieta + Treino</p>
+                  <p className="text-xs text-[#22C55E]/70">Melhor custo-benefício (Economize R$4,90).</p>
+                </div>
+                <div className="text-right">
+                  <span className="block text-[10px] text-red-500 line-through">R$19,80</span>
+                  <span className="text-white font-bold">R$14,90</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 flex items-center justify-center gap-2 text-xs text-gray-500">
+              <CheckCircle2 className="h-4 w-4 text-[#22C55E]" />
+              <span>Compra 100% Segura • Garantia Incondicional</span>
+            </div>
           </div>
         </div>
       </section>
@@ -350,13 +389,13 @@ function Index() {
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#22C55E]/15 blur-[120px]" />
         <div className="container relative mx-auto">
           <h2 className="text-3xl font-black uppercase tracking-tight sm:text-5xl">
-            Comece seus 90 dias hoje.
+            Comece seus próximos 90 dias hoje.
           </h2>
           <Button
             onClick={goToCheckout}
             className="mt-10 h-auto rounded-xl bg-[#22C55E] px-10 py-6 text-base font-black uppercase tracking-wide text-black shadow-[0_0_40px_-10px_rgba(34,197,94,0.7)] transition-transform hover:scale-[1.02] hover:bg-[#16a34a] active:scale-95"
           >
-            Quero garantir meu acesso
+            Quero começar meus 90 dias
           </Button>
         </div>
       </section>
