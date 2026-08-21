@@ -127,8 +127,7 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
-      <div className="bg-yellow-400 p-2 text-center text-xs font-bold text-black">'sim, faça' (on element 'body' at '/src/routes/index.tsx:1')</div>
-      {/* Hero */}
+      {/* Bloco 1 — Topo */}
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute -top-40 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#22C55E]/20 blur-[120px]" />
         <div className="container relative mx-auto grid gap-12 px-6 py-16 lg:grid-cols-2 lg:items-center lg:py-28">
@@ -169,8 +168,22 @@ function Index() {
         </div>
       </section>
 
-      {/* Problema */}
-      <section className="container mx-auto px-6 py-20">
+      {/* Bloco 2 — Texto explicativo de apoio */}
+      <section className="container mx-auto px-6 py-24 text-center">
+        <p className="mx-auto max-w-3xl text-2xl font-bold leading-snug sm:text-4xl">
+          “Os próximos 90 dias vão passar de qualquer forma.{" "}
+          <span className="text-[#22C55E]">
+            A diferença é o que você vai fazer com eles.
+          </span>
+          ”
+        </p>
+        <p className="mx-auto mt-8 max-w-2xl text-gray-400 text-lg">
+          Você não precisa de motivação passageira. Você precisa de uma estrutura simples para organizar seu processo e garantir que cada dia conte para sua transformação.
+        </p>
+      </section>
+
+      {/* Bloco 3 — Lista com ícones (Dores) */}
+      <section className="container mx-auto px-6 py-20 bg-[#0F0F0F] rounded-3xl border border-white/5">
         <h2 className="mb-4 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
           Se você se identifica com isso...
         </h2>
@@ -194,34 +207,7 @@ function Index() {
         </div>
       </section>
 
-      {/* Solução */}
-      <section className="border-y border-white/5 bg-[#0F0F0F]">
-        <div className="container mx-auto px-6 py-20 text-center">
-          <h2 className="text-3xl font-black uppercase tracking-tight sm:text-4xl">
-            Por que este método funciona?
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-gray-400">
-            Não depende de motivação. Depende de um sistema (gatilhos, rotina e o "mínimo aceitável" nos dias ruins).
-          </p>
-          <div className="mx-auto mt-12 grid max-w-4xl gap-4 sm:grid-cols-3">
-            {["Sistema de Rotina", "Plano de Ação", "Checklist Diário"].map((pillar, i) => (
-              <div
-                key={pillar}
-                className="rounded-2xl border border-[#22C55E]/20 bg-[#22C55E]/5 p-8"
-              >
-                <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#22C55E] text-sm font-black text-black">
-                  {i + 1}
-                </div>
-                <p className="text-lg font-bold uppercase tracking-wide">
-                  {pillar}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* O que existe dentro do ebook */}
+      {/* Bloco 4 — Lista com ícones (Benefícios) */}
       <section className="container mx-auto px-6 py-20">
         <h2 className="mb-12 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
           O que existe dentro do ebook
@@ -240,28 +226,75 @@ function Index() {
         </div>
       </section>
 
-      {/* Para quem é */}
+      {/* Bloco 5 — Grade de cards (Depoimentos) */}
+      <section className="container mx-auto px-6 py-24">
+        <h2 className="mb-12 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
+          O que dizem nossos alunos
+        </h2>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
+          <Card className="border-white/5 bg-[#121212] p-6 flex flex-col gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-gray-800" />
+              <div>
+                <p className="font-bold text-sm">Aluno Exemplo</p>
+                <p className="text-xs text-gray-500">Transformação em 90 dias</p>
+              </div>
+            </div>
+            <p className="italic text-gray-400 text-sm">
+              "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
+            </p>
+          </Card>
+          <Card className="border-white/5 bg-[#121212] p-6 flex flex-col gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-gray-800" />
+              <div>
+                <p className="font-bold text-sm">Aluna Exemplo</p>
+                <p className="text-xs text-gray-500">Foco em consistência</p>
+              </div>
+            </div>
+            <p className="italic text-gray-400 text-sm">
+              "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
+            </p>
+          </Card>
+          <Card className="border-white/5 bg-[#121212] p-6 flex flex-col gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-gray-800" />
+              <div>
+                <p className="font-bold text-sm">Aluno Exemplo</p>
+                <p className="text-xs text-gray-500">Resultados reais</p>
+              </div>
+            </div>
+            <p className="italic text-gray-400 text-sm">
+              "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      {/* Bloco 6 — Dois cards lado a lado */}
       <section className="border-y border-white/5 bg-[#0F0F0F]">
         <div className="container mx-auto px-6 py-20">
           <h2 className="mb-12 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
-            Para quem é
+            Para quem é o Projeto 90 Dias?
           </h2>
           <div className="mx-auto grid max-w-3xl gap-5 sm:grid-cols-2">
             {[
               {
                 title: "Para quem está começando",
                 text: "Você quer sair do zero com um caminho claro, sem depender de achismo ou de dezenas de vídeos soltos.",
+                icon: CheckCircle2
               },
               {
                 title: "Para quem já treina",
                 text: "Você já treina, mas sente falta de organização, planejamento e consistência para evoluir de verdade.",
+                icon: CheckCircle2
               },
             ].map((item) => (
               <Card
                 key={item.title}
                 className="border-white/5 bg-[#151515] p-7"
               >
-                <CheckCircle2 className="mb-4 h-7 w-7 text-[#22C55E]" />
+                <item.icon className="mb-4 h-7 w-7 text-[#22C55E]" />
                 <h3 className="mb-2 text-lg font-bold">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-gray-400">
                   {item.text}
@@ -272,29 +305,10 @@ function Index() {
         </div>
       </section>
 
-      {/* Transformação */}
-      <section className="container mx-auto px-6 py-24 text-center">
-        <p className="mx-auto max-w-3xl text-2xl font-bold leading-snug sm:text-4xl">
-          “Os próximos 90 dias vão passar de qualquer forma.{" "}
-          <span className="text-[#22C55E]">
-            A diferença é o que você vai fazer com eles.
-          </span>
-          ”
-        </p>
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 max-w-4xl mx-auto text-left">
-          <Card className="border-white/5 bg-[#121212] p-6 italic text-gray-400">
-            "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
-          </Card>
-          <Card className="border-white/5 bg-[#121212] p-6 italic text-gray-400">
-            "Espaço reservado para depoimento real de aluno. Em breve você verá transformações aqui."
-          </Card>
-        </div>
-      </section>
-
-      {/* Oferta */}
+      {/* Bloco 7 — Bloco final (Oferta) */}
       <section
         id="oferta"
-        className="border-y border-white/5 bg-[#0F0F0F] px-6 py-20"
+        className="px-6 py-24 text-center bg-[#0A0A0A]"
       >
         <div className="container mx-auto max-w-lg">
           <div className="rounded-3xl border border-[#22C55E]/30 bg-[#121212] p-8 text-center shadow-[0_0_60px_-25px_rgba(34,197,94,0.6)]">
