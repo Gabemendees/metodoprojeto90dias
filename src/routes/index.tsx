@@ -171,13 +171,13 @@ function Index() {
         </p>
       </section>
 
-      {/* Bloco 3 — Lista com ícones (Dores) */}
+      {/* Bloco 3 — Situações Comuns */}
       <section className="container mx-auto px-6 py-20 bg-[#0F0F0F] rounded-3xl border border-white/5">
         <h2 className="mb-4 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
-          Se você se identifica com isso...
+          Situações Comuns
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-gray-400">
-          Você não precisa de mais uma dieta ou treino aleatório. Precisa de uma estrutura simples para organizar seu processo.
+          Identifique se você está passando por algum desses desafios atualmente.
         </p>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {PAINS.map((item) => (
