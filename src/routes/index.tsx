@@ -127,33 +127,60 @@ function Index() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
       <div className="bg-yellow-400 p-2 text-black text-[10px] text-center font-mono leading-tight whitespace-pre-wrap">
-        'NÃO ALTERE NENHUM ARQUIVO DO PROJETO.
+        'CORRIJA APENAS ESTE BUG.
 
-Preciso apenas identificar a origem de um comportamento do ambiente de preview.
+O site está exibindo no topo um banner amarelo que contém exatamente o texto da última instrução enviada pelo chat, seguido de:
 
-Sempre que envio uma mensagem pelo chat, o texto completo da minha mensagem aparece em um banner amarelo no topo do preview, acompanhado de:
+(on element \'body\' at \'/src/routes/index.tsx:1\')
 
-"(on element \'body\' at \'/src/routes/index.tsx:1\')"
+Isso está acontecendo DENTRO DA APLICAÇÃO, não apenas no editor.
 
-Determine se esse banner pertence:
+Faça uma busca no projeto inteiro e encontre o código que está capturando minha mensagem/instrução e renderizando-a no elemento body.
 
-ao código da aplicação;
+Procure principalmente por:
 
-ao código de desenvolvimento;
+document.body
 
-ao sistema de preview/editor da Lovable;
+document.createElement
 
-ou a alguma extensão/injeção externa.
+appendChild
 
-NÃO tente remover o banner através do código da aplicação.
+innerHTML
 
-NÃO altere /src/routes/index.tsx.
+textContent
 
-NÃO altere o design da página.
+prompt
 
-NÃO crie componentes para esconder o banner.
+message
 
-Apenas analise a origem e me informe qual sistema está gerando esse banner e por que o conteúdo das minhas mensagens está sendo exibido nele.' (on element 'body' at '/src/routes/index.tsx:1')
+on element
+
+body
+
+execute
+
+componentes de banner, alert, overlay ou debug
+
+Remova completamente a origem desse banner.
+
+NÃO esconda com CSS.
+NÃO use display:none.
+NÃO coloque outro elemento por cima.
+NÃO altere o design da landing page.
+
+Remova o código responsável por criar/injetar esse banner e qualquer código auxiliar usado exclusivamente por ele.
+
+Depois verifique se o banner continua aparecendo após:
+
+recarregar a página;
+
+enviar uma nova mensagem;
+
+navegar entre as rotas.
+
+O texto enviado pelo chat NÃO pode ser renderizado dentro do site em nenhuma circunstância.
+
+Mantenha todo o restante da página exatamente como está.' (on element 'body' at '/src/routes/index.tsx:1')
       </div>
 
       {/* Bloco 1 — Topo */}
