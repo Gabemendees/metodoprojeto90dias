@@ -127,73 +127,59 @@ function Index() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
       <div className="bg-yellow-400 p-2 text-black text-[10px] text-center font-mono leading-tight whitespace-pre-wrap">
-        'Reorganize a página de vendas do meu produto digital "Projeto 90 Dias" (um ebook sobre organização de alimentação, treino e hábitos). Mantenha o visual, cores, fontes e estilo atuais do site. Use a estrutura e os textos abaixo, seção por seção, mantendo a responsividade para celular e sem alterar nenhuma função, formulário ou lógica de checkout existente.
+        'NÃO faça nenhuma alteração de design ou conteúdo ainda.
 
-SEÇÃO 1 — TOPO
+Existe um problema no ambiente de preview: toda vez que envio uma nova mensagem pelo chat, o texto completo dessa mensagem aparece em um BANNER AMARELO no topo da página.
 
-Título: Reconstrua sua rotina de alimentação e treino em 90 dias
+O banner termina com algo semelhante a:
 
-Subtítulo: Um método simples de seguir, pensado para funcionar mesmo nos dias difíceis — não mais uma dieta ou treino que você abandona em duas semanas.
+(on element \'body\' at \'/src/routes/index.tsx:1\')
 
-Botão: Quero começar meu Projeto 90 Dias
+Isso indica que o problema pode estar relacionado ao sistema de edição/preview, a um overlay de erro/debug ou a alguma integração que está interceptando as instruções do chat.
 
-SEÇÃO 2 — COMO FUNCIONA
+QUERO QUE VOCÊ PRIMEIRO IDENTIFIQUE A ORIGEM EXATA DESSE BANNER.
 
-Texto: Este material reúne alimentação, treino, hábitos e acompanhamento em um único guia prático. Inclui plano de ação e planner de 90 dias para você organizar sua rotina sem depender só de força de vontade.
+Verifique:
 
-SEÇÃO 3 — SITUAÇÕES COMUNS (lista com ícones, 6 itens)
+se ele é gerado pelo código da aplicação;
 
-- Já tentou seguir dietas antes e não conseguiu manter
+se existe algum componente de erro/debug;
 
-- Treina mas sente que não está evoluindo
+se existe algum overlay de edição;
 
-- Tem dificuldade de montar refeições equilibradas no dia a dia
+se existe algum código que captura a última instrução enviada;
 
-- Sente que um dia fora do planejado "estraga" a semana toda
+se existe alguma integração com o sistema de edição visual;
 
-- Não sabe se está progredindo corretamente no treino
+se existe algum código adicionando conteúdo ao elemento body;
 
-- Não sabe o que fazer quando o peso para de mudar
+se existe alguma configuração de desenvolvimento causando isso;
 
-SEÇÃO 4 — O QUE VOCÊ RECEBE (lista com ícones, 6 itens)
+se esse banner está sendo injetado pelo próprio ambiente de preview em vez do código da aplicação.
 
-- Método aplicável tanto para emagrecimento quanto para ganho de massa
+IMPORTANTE:
 
-- Estrutura pensada para manter mesmo em dias corridos
+Se esse banner NÃO estiver sendo criado pelo código da aplicação e for um recurso interno do ambiente da Lovable, NÃO tente criar uma solução falsa dentro do site.
 
-- Plano de ação e planner de 90 dias inclusos
+Nesse caso, informe claramente que ele é um overlay do ambiente de preview/editor.
 
-- Guia prático de alimentação com substituições de alimentos
+Se ele estiver sendo criado pelo código da aplicação, remova completamente a origem dele, e não apenas esconda com CSS.
 
-- Guia de treino com foco em progressão segura
+O resultado esperado é:
 
-- Orientações para eventos sociais, vontade de doce, treino perdido e peso estagnado
+enviar um prompt pelo chat;
 
-SEÇÃO 5 — DEPOIMENTOS
+o prompt continuar aparecendo SOMENTE no chat;
 
-Grade de 3 a 4 cards com foto/avatar, nome e texto curto. Use placeholders de exemplo por enquanto — os depoimentos reais serão inseridos depois.
+o conteúdo do prompt nunca ser reproduzido dentro da página;
 
-SEÇÃO 6 — ITENS INCLUSOS
+nenhum banner amarelo aparecer no topo;
 
-Dois cards lado a lado:
+nenhuma mensagem de debug ou edição aparecer sobre o site.
 
-- Card 1: Ferramenta que monta uma dieta personalizada com base no perfil da pessoa
+NÃO altere o design, conteúdo, checkout, componentes ou funcionalidades da página para tentar resolver isso.
 
-- Card 2: Ferramenta que monta um treino personalizado com base no perfil da pessoa
-
-Texto de apoio: Essas ferramentas colocam em prática o que o ebook ensina, de forma individualizada.
-
-SEÇÃO 7 — OFERTA FINAL
-
-Preço do ebook em destaque.
-
-Texto: Ao finalizar a compra, você também pode adicionar as ferramentas de dieta e treino personalizados por valores especiais.
-
-Botão: Quero meu Projeto 90 Dias agora
-
-Texto pequeno abaixo do botão: Conteúdo educativo e informativo. Não substitui acompanhamento de profissionais de saúde.
-
-Mantenha os três itens adicionais do checkout exatamente como estão configurados hoje (não altere valores nem lógica), apenas o texto ao redor deles se necessário para combinar com a Seção 6.' (on element 'body' at '/src/routes/index.tsx:1')
+Primeiro identifique a origem do problema e depois corrija somente a causa.' (on element 'body' at '/src/routes/index.tsx:1')
       </div>
 
       {/* Bloco 1 — Topo */}
