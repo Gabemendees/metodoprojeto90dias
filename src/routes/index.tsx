@@ -389,13 +389,13 @@ function Index() {
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#22C55E]/15 blur-[120px]" />
         <div className="container relative mx-auto">
           <h2 className="text-3xl font-black uppercase tracking-tight sm:text-5xl">
-            Comece seus 90 dias hoje.
+            Comece seus próximos 90 dias hoje.
           </h2>
           <Button
             onClick={goToCheckout}
             className="mt-10 h-auto rounded-xl bg-[#22C55E] px-10 py-6 text-base font-black uppercase tracking-wide text-black shadow-[0_0_40px_-10px_rgba(34,197,94,0.7)] transition-transform hover:scale-[1.02] hover:bg-[#16a34a] active:scale-95"
           >
-            Quero garantir meu acesso
+            Quero começar meus 90 dias
           </Button>
         </div>
       </section>
