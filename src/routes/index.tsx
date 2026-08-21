@@ -272,23 +272,26 @@ function Index() {
         </div>
       </section>
 
-      {/* Bloco 6 — Dois cards lado a lado */}
+      {/* Bloco 6 — Itens Inclusos */}
       <section className="border-y border-white/5 bg-[#0F0F0F]">
         <div className="container mx-auto px-6 py-20">
-          <h2 className="mb-12 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
-            Para quem é o Projeto 90 Dias?
+          <h2 className="mb-4 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
+            Itens Inclusos
           </h2>
-          <div className="mx-auto grid max-w-3xl gap-5 sm:grid-cols-2">
+          <p className="mx-auto mb-12 max-w-2xl text-center text-gray-400">
+            Essas ferramentas colocam em prática o que o ebook ensina, de forma individualizada.
+          </p>
+          <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
             {[
               {
-                title: "Para quem está começando",
-                text: "Você quer sair do zero com um caminho claro, sem depender de achismo ou de dezenas de vídeos soltos.",
-                icon: CheckCircle2
+                title: "Dieta Personalizada",
+                text: "Ferramenta que monta uma dieta personalizada com base no perfil da pessoa.",
+                icon: Utensils
               },
               {
-                title: "Para quem já treina",
-                text: "Você já treina, mas sente falta de organização, planejamento e consistência para evoluir de verdade.",
-                icon: CheckCircle2
+                title: "Treino Personalizado",
+                text: "Ferramenta que monta um treino personalizado com base no perfil da pessoa.",
+                icon: Dumbbell
               },
             ].map((item) => (
               <Card
