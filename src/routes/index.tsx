@@ -127,23 +127,7 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
-      <div className="bg-yellow-400 p-2 text-center text-xs font-bold text-black">'Reorganize o layout da minha landing page em 7 blocos, mantendo o visual, cores e estilo atuais do site. Não altere nenhum texto ainda, apenas a ordem e a estrutura visual dos blocos:
-
-Bloco 1 — Topo: título grande + subtítulo + botão de ação
-
-Bloco 2 — Texto explicativo de apoio
-
-Bloco 3 — Lista com ícones (4 a 6 itens)
-
-Bloco 4 — Lista com ícones (4 a 6 itens)
-
-Bloco 5 — Grade de cards com foto, nome e texto (para depoimentos)
-
-Bloco 6 — Dois cards lado a lado com título, descrição e ícone
-
-Bloco 7 — Bloco final com valor em destaque e botão de ação
-
-Não modifique nenhuma função, integração ou lógica de checkout existente. Apenas reorganize a estrutura visual dos blocos acima.' (on element 'body' at '/src/routes/index.tsx:1')</div>
+      <div className="bg-yellow-400 p-2 text-center text-xs font-bold text-black">'sim, faça' (on element 'body' at '/src/routes/index.tsx:1')</div>
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute -top-40 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#22C55E]/20 blur-[120px]" />
