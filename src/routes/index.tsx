@@ -196,10 +196,10 @@ function Index() {
         </div>
       </section>
 
-      {/* Bloco 4 — Lista com ícones (Benefícios) */}
+      {/* Bloco 4 — O Que Você Recebe */}
       <section className="container mx-auto px-6 py-20">
         <h2 className="mb-12 text-center text-3xl font-black uppercase tracking-tight sm:text-4xl">
-          O que existe dentro do ebook
+          O que você recebe
         </h2>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {CONTENTS.map(({ icon: Icon, title, text }) => (
