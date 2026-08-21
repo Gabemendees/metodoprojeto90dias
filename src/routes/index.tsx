@@ -161,17 +161,13 @@ function Index() {
         </div>
       </section>
 
-      {/* Bloco 2 — Texto explicativo de apoio */}
+      {/* Bloco 2 — Como Funciona */}
       <section className="container mx-auto px-6 py-24 text-center">
-        <p className="mx-auto max-w-3xl text-2xl font-bold leading-snug sm:text-4xl">
-          “Os próximos 90 dias vão passar de qualquer forma.{" "}
-          <span className="text-[#22C55E]">
-            A diferença é o que você vai fazer com eles.
-          </span>
-          ”
-        </p>
-        <p className="mx-auto mt-8 max-w-2xl text-gray-400 text-lg">
-          Você não precisa de motivação passageira. Você precisa de uma estrutura simples para organizar seu processo e garantir que cada dia conte para sua transformação.
+        <h2 className="mb-8 text-3xl font-black uppercase tracking-tight sm:text-4xl">
+          Como Funciona
+        </h2>
+        <p className="mx-auto max-w-3xl text-xl leading-relaxed text-gray-400">
+          Este material reúne alimentação, treino, hábitos e acompanhamento em um único guia prático. Inclui plano de ação e planner de 90 dias para você organizar sua rotina sem depender só de força de vontade.
         </p>
       </section>
 
