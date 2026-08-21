@@ -126,7 +126,41 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
-      <div className="bg-yellow-400 p-2 text-center text-xs font-bold text-black">'execute a reestruturaçao' (on element 'body' at '/src/routes/index.tsx:1')</div>
+      <div className="bg-yellow-400 p-2 text-center text-xs font-bold text-black">'Remova COMPLETAMENTE o banner amarelo de erro que está aparecendo no topo da página.
+
+O banner exibe uma mensagem semelhante a:
+
+'execute a reestruturação' (on element 'body' at '/src/routes/index.tsx:1')
+
+IMPORTANTE: não quero apenas esconder o banner com CSS. Quero que você descubra a origem dele e REMOVA DEFINITIVAMENTE o código responsável por criá-lo.
+
+Faça uma varredura no projeto inteiro e:
+
+Localize a origem desse banner e da mensagem.
+
+Remova o componente, função, script, importação, hook, overlay, listener ou qualquer outro código responsável por renderizá-lo.
+
+Verifique especialmente /src/routes/index.tsx e qualquer componente global, layout, provider ou wrapper.
+
+Procure também por código que esteja tentando inserir esse aviso diretamente no body ou no DOM.
+
+Não substitua o banner por outro elemento.
+
+Não o esconda apenas com display: none, visibility: hidden, z-index ou CSS.
+
+Remova a causa real do problema.
+
+Verifique se existe alguma configuração, código de debug ou ferramenta de desenvolvimento que esteja gerando esse aviso.
+
+Depois da correção, verifique todas as rotas da aplicação.
+
+Garanta que esse banner não seja renderizado novamente após reload, hot reload, build ou publicação.
+
+OBJETIVO FINAL:
+
+A página deve ficar completamente limpa no topo, sem esse banner amarelo e sem qualquer mensagem de erro visual relacionada a ele.
+
+NÃO faça nenhuma outra alteração visual ou estrutural na página. Resolva exclusivamente esse problema e mantenha todo o restante funcionando exatamente como está.' (on element 'body' at '/src/routes/index.tsx:1')</div>
       {/* Bloco 1 — Topo */}
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute -top-40 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#22C55E]/20 blur-[120px]" />
