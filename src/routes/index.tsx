@@ -51,45 +51,44 @@ export const Route = createFileRoute("/")({
 });
 
 const PAINS = [
-  "Já tentou várias dietas e recuperou o peso perdido",
-  "Treina mas sente que não evolui",
-  "Não sabe montar refeições sem ficar contando calorias",
-  "Se sente culpado(a) quando sai da dieta um dia",
-  "Não sabe se está progredindo no treino",
-  "Fica confuso(a) sobre o que realmente vale em suplementação",
-  "Não sabe o que fazer quando o peso estagna",
+  "Já tentou seguir dietas antes e não conseguiu manter",
+  "Treina mas sente que não está evoluindo",
+  "Tem dificuldade de montar refeições equilibradas no dia a dia",
+  "Sente que um dia fora do planejado \"estraga\" a semana toda",
+  "Não sabe se está progredindo corretamente no treino",
+  "Não sabe o que fazer quando o peso para de mudar",
 ];
 
 const CONTENTS = [
   {
-    icon: Utensils,
-    title: "Recomposição Corporal",
-    text: "Um método que funciona tanto para emagrecer quanto para ganhar massa muscular.",
+    icon: Target,
+    title: "Método Versátil",
+    text: "Aplicável tanto para emagrecimento quanto para ganho de massa muscular.",
   },
   {
     icon: Flame,
-    title: "Sistema Anti-Falhas",
-    text: "Pensado para funcionar mesmo nos dias ruins, sem depender apenas de força de vontade.",
+    title: "Estrutura Resiliente",
+    text: "Pensada para manter a consistência mesmo nos dias mais corridos e difíceis.",
   },
   {
     icon: CalendarCheck,
     title: "Plano de Ação + Planner",
-    text: "Checklist e acompanhamento de 90 dias prontos para usar, sem precisar criar nada do zero.",
+    text: "Plano de ação e planner de 90 dias inclusos para você organizar sua rotina.",
   },
   {
     icon: Utensils,
-    title: "Alimentação Prática",
-    text: "Guia do prato e substituições inteligentes sem precisar contar calorias o dia inteiro.",
+    title: "Guia de Alimentação",
+    text: "Guia prático com substituições de alimentos para facilitar seu dia a dia.",
   },
   {
     icon: Dumbbell,
     title: "Guia de Treino",
-    text: "Foco em progressão segura e técnica correta antes de pensar em carga.",
+    text: "Foco em progressão segura e técnica correta para resultados constantes.",
   },
   {
-    icon: Target,
-    title: "Situações Reais",
-    text: "Respostas prontas para eventos sociais, vontade de doce e treinos perdidos.",
+    icon: CheckCircle2,
+    title: "Suporte a Imprevistos",
+    text: "Orientações para eventos sociais, vontade de doce, treino perdido e peso estagnado.",
   },
 ];
 
