@@ -126,8 +126,78 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
+      <div className="bg-yellow-400 p-2 text-black text-[10px] text-center font-mono leading-tight whitespace-pre-wrap">
+        'Reorganize a página de vendas do meu produto digital "Projeto 90 Dias" (um ebook sobre organização de alimentação, treino e hábitos). Mantenha o visual, cores, fontes e estilo atuais do site. Use a estrutura e os textos abaixo, seção por seção, mantendo a responsividade para celular e sem alterar nenhuma função, formulário ou lógica de checkout existente.
+
+SEÇÃO 1 — TOPO
+
+Título: Reconstrua sua rotina de alimentação e treino em 90 dias
+
+Subtítulo: Um método simples de seguir, pensado para funcionar mesmo nos dias difíceis — não mais uma dieta ou treino que você abandona em duas semanas.
+
+Botão: Quero começar meu Projeto 90 Dias
+
+SEÇÃO 2 — COMO FUNCIONA
+
+Texto: Este material reúne alimentação, treino, hábitos e acompanhamento em um único guia prático. Inclui plano de ação e planner de 90 dias para você organizar sua rotina sem depender só de força de vontade.
+
+SEÇÃO 3 — SITUAÇÕES COMUNS (lista com ícones, 6 itens)
+
+- Já tentou seguir dietas antes e não conseguiu manter
+
+- Treina mas sente que não está evoluindo
+
+- Tem dificuldade de montar refeições equilibradas no dia a dia
+
+- Sente que um dia fora do planejado "estraga" a semana toda
+
+- Não sabe se está progredindo corretamente no treino
+
+- Não sabe o que fazer quando o peso para de mudar
+
+SEÇÃO 4 — O QUE VOCÊ RECEBE (lista com ícones, 6 itens)
+
+- Método aplicável tanto para emagrecimento quanto para ganho de massa
+
+- Estrutura pensada para manter mesmo em dias corridos
+
+- Plano de ação e planner de 90 dias inclusos
+
+- Guia prático de alimentação com substituições de alimentos
+
+- Guia de treino com foco em progressão segura
+
+- Orientações para eventos sociais, vontade de doce, treino perdido e peso estagnado
+
+SEÇÃO 5 — DEPOIMENTOS
+
+Grade de 3 a 4 cards com foto/avatar, nome e texto curto. Use placeholders de exemplo por enquanto — os depoimentos reais serão inseridos depois.
+
+SEÇÃO 6 — ITENS INCLUSOS
+
+Dois cards lado a lado:
+
+- Card 1: Ferramenta que monta uma dieta personalizada com base no perfil da pessoa
+
+- Card 2: Ferramenta que monta um treino personalizado com base no perfil da pessoa
+
+Texto de apoio: Essas ferramentas colocam em prática o que o ebook ensina, de forma individualizada.
+
+SEÇÃO 7 — OFERTA FINAL
+
+Preço do ebook em destaque.
+
+Texto: Ao finalizar a compra, você também pode adicionar as ferramentas de dieta e treino personalizados por valores especiais.
+
+Botão: Quero meu Projeto 90 Dias agora
+
+Texto pequeno abaixo do botão: Conteúdo educativo e informativo. Não substitui acompanhamento de profissionais de saúde.
+
+Mantenha os três itens adicionais do checkout exatamente como estão configurados hoje (não altere valores nem lógica), apenas o texto ao redor deles se necessário para combinar com a Seção 6.' (on element 'body' at '/src/routes/index.tsx:1')
+      </div>
 
       {/* Bloco 1 — Topo */}
+
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute -top-40 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#22C55E]/20 blur-[120px]" />
         <div className="container relative mx-auto grid gap-12 px-6 py-16 lg:grid-cols-2 lg:items-center lg:py-28">
