@@ -307,6 +307,9 @@ function Index() {
               </Card>
             ))}
           </div>
+          <p className="mt-8 text-center text-gray-400 max-w-2xl mx-auto">
+            Essas ferramentas colocam em prática o que o ebook ensina, de forma individualizada.
+          </p>
         </div>
       </section>
 
