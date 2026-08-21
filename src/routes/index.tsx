@@ -127,7 +127,7 @@ function Index() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
       <div className="bg-yellow-400 p-2 text-black text-[10px] text-center font-mono leading-tight whitespace-pre-wrap">
-        'Implemente uma busca no código para identificar onde a última instrução do chat está sendo capturada e injetada no elemento body, removendo completamente essa origem.' (on element 'body' at '/src/routes/index.tsx:1')
+        'PARE IMEDIATAMENTE DE COLOCAR TEXTO NO BANNER' (on element 'body' at '/src/routes/index.tsx:1')
       </div>
 
       {/* Bloco 1 — Topo */}
