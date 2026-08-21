@@ -126,7 +126,7 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
-      <div className="bg-yellow-400 p-2 text-center text-xs font-bold text-black">'remova o banner' (on element 'body' at '/src/routes/index.tsx:1')</div>
+      {/* Banner removed permanentemente */}
       {/* Bloco 1 — Topo */}
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute -top-40 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#22C55E]/20 blur-[120px]" />
