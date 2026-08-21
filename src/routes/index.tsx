@@ -127,7 +127,7 @@ function Index() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
       <div className="bg-yellow-400 p-2 text-black text-[10px] text-center font-mono leading-tight whitespace-pre-wrap">
-        'remova o banner' (on element 'body' at '/src/routes/index.tsx:1')
+        'Verificar se o banner amarelo foi realmente removido e não aparece mais no site após a edição.' (on element 'body' at '/src/routes/index.tsx:1')
       </div>
 
       {/* Bloco 1 — Topo */}
