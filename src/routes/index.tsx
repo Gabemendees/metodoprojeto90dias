@@ -135,18 +135,12 @@ function Index() {
               Ebook digital • Acesso imediato
             </span>
             <h1 className="text-4xl font-black uppercase leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-              Reconstrua seu corpo{" "}
-              <span className="text-[#22C55E]">antes que o ano acabe.</span>
+              Reconstrua sua rotina de{" "}
+              <span className="text-[#22C55E]">alimentação e treino em 90 dias</span>
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-gray-400">
-              Um MÉTODO simples de repetir. Não é mais uma dieta restritiva ou treino que você abandona em 2 semanas.
+              Um método simples de seguir, pensado para funcionar mesmo nos dias difíceis — não mais uma dieta ou treino que você abandona em duas semanas.
             </p>
-            <div className="flex flex-wrap items-baseline gap-3">
-              <span className="text-4xl font-black text-[#22C55E]">R$22,90</span>
-              <span className="text-sm font-medium text-gray-500">
-                pagamento único
-              </span>
-            </div>
             <Button
               onClick={goToCheckout}
               className="h-auto w-full rounded-xl bg-[#22C55E] px-8 py-6 text-base font-black uppercase tracking-wide text-black shadow-[0_0_40px_-10px_rgba(34,197,94,0.7)] transition-transform hover:scale-[1.02] hover:bg-[#16a34a] active:scale-95 sm:w-auto"
