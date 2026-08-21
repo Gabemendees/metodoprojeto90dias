@@ -127,7 +127,33 @@ function Index() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
       <div className="bg-yellow-400 p-2 text-black text-[10px] text-center font-mono leading-tight whitespace-pre-wrap">
-        'exclua definitivamente src/routes/index.tsx, nao acrescente nenhuma mensagem que eu enviar mais la' (on element 'body' at '/src/routes/index.tsx:1')
+        'NÃO ALTERE NENHUM ARQUIVO DO PROJETO.
+
+Preciso apenas identificar a origem de um comportamento do ambiente de preview.
+
+Sempre que envio uma mensagem pelo chat, o texto completo da minha mensagem aparece em um banner amarelo no topo do preview, acompanhado de:
+
+"(on element \'body\' at \'/src/routes/index.tsx:1\')"
+
+Determine se esse banner pertence:
+
+ao código da aplicação;
+
+ao código de desenvolvimento;
+
+ao sistema de preview/editor da Lovable;
+
+ou a alguma extensão/injeção externa.
+
+NÃO tente remover o banner através do código da aplicação.
+
+NÃO altere /src/routes/index.tsx.
+
+NÃO altere o design da página.
+
+NÃO crie componentes para esconder o banner.
+
+Apenas analise a origem e me informe qual sistema está gerando esse banner e por que o conteúdo das minhas mensagens está sendo exibido nele.' (on element 'body' at '/src/routes/index.tsx:1')
       </div>
 
       {/* Bloco 1 — Topo */}
