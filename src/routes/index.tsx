@@ -63,27 +63,27 @@ const CONTENTS = [
   {
     icon: Target,
     title: "Método Versátil",
-    text: "Aplicável tanto para emagrecimento quanto para ganho de massa muscular.",
+    text: "Método aplicável tanto para emagrecimento quanto para ganho de massa.",
   },
   {
     icon: Flame,
     title: "Estrutura Resiliente",
-    text: "Pensada para manter a consistência mesmo nos dias mais corridos e difíceis.",
+    text: "Estrutura pensada para manter mesmo em dias corridos.",
   },
   {
     icon: CalendarCheck,
     title: "Plano de Ação + Planner",
-    text: "Plano de ação e planner de 90 dias inclusos para você organizar sua rotina.",
+    text: "Plano de ação e planner de 90 dias inclusos.",
   },
   {
     icon: Utensils,
     title: "Guia de Alimentação",
-    text: "Guia prático com substituições de alimentos para facilitar seu dia a dia.",
+    text: "Guia prático de alimentação com substituições de alimentos.",
   },
   {
     icon: Dumbbell,
     title: "Guia de Treino",
-    text: "Foco em progressão segura e técnica correta para resultados constantes.",
+    text: "Guia de treino com foco em progressão segura.",
   },
   {
     icon: CheckCircle2,
@@ -126,7 +126,7 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white antialiased selection:bg-[#22C55E]/30">
-      {/* Banner removed permanentemente */}
+      <div className="bg-yellow-400 p-2 text-center text-xs font-bold text-black">'execute a reestruturaçao' (on element 'body' at '/src/routes/index.tsx:1')</div>
       {/* Bloco 1 — Topo */}
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute -top-40 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#22C55E]/20 blur-[120px]" />
