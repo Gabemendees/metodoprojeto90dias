@@ -168,6 +168,10 @@ SEÇÃO 4 — O QUE VOCÊ RECEBE (lista com ícones, 6 itens)
 
 - Orientações para eventos sociais, vontade de doce, treino perdido e peso estagnado
 
+SEÇÃO 5 — DEPOIMENTOS
+
+Grade de 3 a 4 cards com foto/avatar, nome e texto curto. Use placeholders de exemplo por enquanto — os depoimentos reais serão inseridos depois.
+
 SEÇÃO 6 — ITENS INCLUSOS
 
 Dois cards lado a lado:
